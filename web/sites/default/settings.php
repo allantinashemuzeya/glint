@@ -89,7 +89,16 @@
  * @endcode
  */
 $databases = [];
-
+ $databases['default']['default'] = [
+  'database' => 'glint',
+  'username' => 'amuzeya',
+  'password' => 'Kungfucool24!!',
+  'host' => 'localhost',
+  'port' => '3306',
+  'driver' => 'mysql',
+  'prefix' => '',
+  'collation' => 'utf8mb4_general_ci',
+];
 /**
  * Customizing database settings.
  *
@@ -235,7 +244,7 @@ $databases = [];
  * directory in the public files path. The setting below allows you to set
  * its location.
  */
-# $settings['config_sync_directory'] = '/directory/outside/webroot';
+ $settings['config_sync_directory'] = '/config';
 
 /**
  * Settings:
