@@ -31,7 +31,8 @@
         "drupal/paragraphs": "^1.17",
         "drupal/pathauto": "^1.12",
         "drupal/redirect": "^1.9",
-        "drupal/twig_debugger": "^1.1"
+        "drupal/twig_debugger": "^1.1",
+        "drush/drush": "^12.5"
     },
     "conflict": {
         "drupal/drupal": "*"
