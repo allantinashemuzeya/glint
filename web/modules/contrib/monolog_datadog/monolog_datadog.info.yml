@@ -1,0 +1,12 @@
+name: Monolog Datadog
+type: module
+description: 'Send Drupal logs to Datadog via Monolog.'
+core_version_requirement: ^8 || ^9 || ^10
+
+dependencies:
+  - monolog:monolog
+
+# Information added by Drupal.org packaging script on 2024-03-08
+version: '1.0.3'
+project: 'monolog_datadog'
+datestamp: 1709903121

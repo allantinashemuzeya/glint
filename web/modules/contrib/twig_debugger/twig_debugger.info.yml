@@ -1,0 +1,12 @@
+name: 'Twig Debugger'
+type: module
+description: 'Enables Twig Debugging for your website'
+package: Other
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+configure: twig_debugger.settings
+
+# Information added by Drupal.org packaging script on 2022-07-17
+version: '1.1.3'
+project: 'twig_debugger'
+datestamp: 1658045461

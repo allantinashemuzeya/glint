@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Send metrics to datadog using a cron job.
+ */
+
+/**
+ * Implements hook_cron().
+ */
+function datadog_metrics_cron() {
+  // Retrieve the service container.
+  $migrationsMonitoringService = \Drupal::service('datadog_metrics.migration_monitoring');
+  $migrationsMonitoringService->migrationsMonitoring();
+
+  $migrationsMonitoringService = \Drupal::service('datadog_metrics.queue_monitoring');
+  $migrationsMonitoringService->queueMonitoring();
+}

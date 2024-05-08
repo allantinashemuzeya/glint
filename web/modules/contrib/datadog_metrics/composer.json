@@ -1,0 +1,27 @@
+{
+    "name": "drupal/datadog_metrics",
+    "description": "Send metrics to datadog",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Leo Röttele (leorott)",
+            "email": "leo.roettele@liip.ch",
+            "homepage": "https://www.drupal.org/u/leorott",
+            "role": "Maintainer"
+        },
+        {
+            "name": "Martin Penev (martinpe)",
+            "email": "martin.penev@liip.ch",
+            "homepage": "https://www.drupal.org/u/martinpe",
+            "role": "Maintainer"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5.8 || ^7.4.5"
+    },
+    "require-dev": {
+        "guzzlehttp/psr7": "^1.9 || 2.4.5",
+        "drupal/migrate_plus": "~5.0 || ^6.0"
+    }
+}

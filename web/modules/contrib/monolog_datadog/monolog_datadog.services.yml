@@ -1,0 +1,5 @@
+services:
+  monolog_datadog.test_logging_service:
+    class: \Drupal\monolog_datadog\Commands\TestLoggingService
+    tags:
+      - { name: drush.command }

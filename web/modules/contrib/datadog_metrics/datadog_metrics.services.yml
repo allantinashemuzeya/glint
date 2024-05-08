@@ -1,0 +1,31 @@
+services:
+  guzzle_http_client:
+    class: GuzzleHttp\Client
+
+  datadog_metrics.migration_monitoring:
+    class: \Drupal\datadog_metrics\MigrationsMonitoring
+    arguments:
+      - '@guzzle_http_client'
+      - '@config.factory'
+      - '@plugin.manager.migration'
+      - '@state'
+      - '@database'
+
+  datadog_metrics.queue_monitoring:
+    class: \Drupal\datadog_metrics\QueueMonitoring
+    arguments:
+      - '@plugin.manager.queue_worker'
+      - '@queue'
+      - '@guzzle_http_client'
+      - '@config.factory'
+
+  datadog_metrics.migration_event_subscriber:
+    class: Drupal\datadog_metrics\EventSubscriber\MigrationEventSubscriber
+    tags:
+      - { name: event_subscriber }
+    arguments:
+      - '@state'
+      - '@database'
+      - '@guzzle_http_client'
+      - '@config.factory'
+      - '@plugin.manager.migration'

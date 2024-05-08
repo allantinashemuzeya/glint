@@ -1,0 +1,15 @@
+{
+    "name": "drupal/twig_debugger",
+    "type": "drupal-module",
+    "description": "Enables Twig Debugging for your website.",
+    "keywords": ["Drupal", "Twig Debugger\n"],
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/twig_debugger",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/twig_debugger",
+        "source": "https://git.drupalcode.org/project/twig_debugger"
+    },
+    "require": {
+        "drupal/core": "^8 || ^9 || ^10"
+    }
+}

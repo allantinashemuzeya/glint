@@ -1,0 +1,13 @@
+name: datadog_metrics
+type: module
+description: Send metrics to datadog using a cron job
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+dependencies:
+  - drupal:migrate
+  - drupal:migrate_plus
+# Information added by Drupal.org packaging script on 2023-10-25
+version: '1.0.0-rc4'
+project: 'datadog_metrics'
+datestamp: 1698238736

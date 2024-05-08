@@ -1,0 +1,5 @@
+twig_debugger.settings:
+  title: 'Twig Debugger'
+  parent: system.admin_config_development
+  description: 'Configure Twig Debugger settings.'
+  route_name: twig_debugger.settings

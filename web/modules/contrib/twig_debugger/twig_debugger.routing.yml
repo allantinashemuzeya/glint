@@ -1,0 +1,7 @@
+twig_debugger.settings:
+  path: '/admin/config/development/twig-debugger'
+  defaults:
+    _form: '\Drupal\twig_debugger\Form\TwigDebugger'
+    _title: 'Twig Debugger Configuration'
+  requirements:
+    _permission: 'administer twig debugger configuration'
